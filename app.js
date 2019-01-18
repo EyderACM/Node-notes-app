@@ -23,9 +23,10 @@ if (command === 'add') {
   myNotes.forEach(note => {
     console.log(`Note title: ${note.title} Note body: ${note.body}`);
   });
-} else if (command === 'read'){
+} else if (command === 'read'){  
   let noteRead = notes.getNote(arvg.title);
   console.log(noteRead);
+  debugger;
   notes.logNote(noteRead[0]);
 } else if (command === 'remove') {
   notes.removeNote(arvg.title);
