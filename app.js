@@ -25,7 +25,7 @@ if (command === 'add') {
   });
 } else if (command === 'read'){  
   let noteRead = notes.getNote(arvg.title);
-  console.log(noteRead);
+  console.log(arvg.title);
   debugger;
   notes.logNote(noteRead[0]);
 } else if (command === 'remove') {
